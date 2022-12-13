@@ -65,11 +65,11 @@
                     <img src="assets/images/avatar.jpg" alt="">
                     <span class="presence-indicator online"></span>
                   </figure> -->
-                <figure class="avatar-default" style="background-color: #fb7636; color: #000">
-                  <!-- <span>bc</span>
-                    <span class="presence-indicator online"></span> -->
+                <!-- <figure class="avatar-default" style="background-color: #fb7636; color: #000">
+                  <span>bc</span>
+                    <span class="presence-indicator online"></span>
                   <img src="./assets/images/avatars/instantpic.JPG" alt="">
-                </figure>
+                </figure> -->
                 <strong class="user-name text-dark">Olugbenga Agboola Matthew</strong>
               </a>
             </li>
@@ -89,7 +89,13 @@
     <main class="main-container">
 
       <nav class="sidebar sidebar-main">
-        <div style="margin-left: 15px;">
+        <a class="user-profile" href="#" role="button" id="profiletab" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          <figure class="avatar-nav" style="background-color: #fb7636; color: #000">
+            <img src="./assets/images/avatars/instantpic.JPG" alt="">
+          </figure>
+        </a>
+        <div style="margin: 30px 0 30px 55px;">
           <h2 class="text-white">Welcome, Agboola</h2>
           <h5 class="text-white">VIN: 830116201126</h5>
         </div>
@@ -167,23 +173,30 @@
         <!-- <div class="container"> -->
         <div class="sec-summary pt-0">
           <div class="row">
-            <div class="col-md-8 col-12">
+            <div class="col-md-6 col-12">
               <div class="gradientBox white-bg">
                 <!-- <span class="iconbox"><img src="assets/images/icons/summary/7.png" alt="" /></span> -->
                 <div class="gradientBox-content" id="available-bal" style="cursor: pointer;">
                   <div class="row">
                     <div class="col-md-6">
-                      <h5 class="title">Available balance</h5>
-                    </div>
-                    <div class="col-md-6">
-                      <p style="font-size: 15px !important;">$191,300.01</p>
-                    </div>
-
-                    <div class="col-md-6">
-                      <h5 class="title">Account</h5>
+                      <h5 class="title">Current Account</h5>
                     </div>
                     <div class="col-md-6">
                       <p style="font-size: 15px !important;">011832610257</p>
+                    </div>
+
+                    <div class="col-md-6">
+                      <h5 class="title">Savings Account</h5>
+                    </div>
+                    <div class="col-md-6">
+                      <p style="font-size: 15px !important;">069212569841</p>
+                    </div>
+
+                    <div class="col-md-6">
+                      <h5 class="title">Available balance</h5>
+                    </div>
+                    <div class="col-md-6">
+                      <p style="font-size: 15px !important;">CHF 191,300.01</p>
                     </div>
 
                     <div class="col-md-6">
@@ -211,24 +224,30 @@
                 <!-- <p class="text-danger" style="display: none; font-size: 20px;" id="dashboard-error">Blocked Error!</p> -->
               </div>
             </div>
-            <!-- <div class="col-md-3 col-6">
+            <div class="col-md-6 col-12">
               <div class="gradientBox white-bg">
-                <span class="iconbox"><img src="assets/images/icons/summary/8.png" alt="" /></span>
-                <div class="gradientBox-content row">
-                  <div class="col">
-                    <h5 class="title">Current Account:</h5>
-                    <h5 class="title">Routing:</h5>
+                <div class="sec-summary">
+                  <div class="gradientBox-content">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5 class="title">Pending Credit</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <p style="font-size: 15px !important;">CHF 400,000</p>
+                      </div>
+    
+                      <div class="col-md-6">
+                        <h5 class="title">Pending Debit</h5>
+                      </div>
+                      <div class="col-md-6">
+                        <p style="font-size: 15px !important;">- CHF 400,000</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col">
-                    <p style="font-size: 18px !important;">*****95422</p>
-                    <p style="font-size: 18px !important; margin-top: 20px;">05300219</p>
-                  </div>
-
-
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-6">
+            <!-- <div class="col-md-3 col-6">
               <div class="gradientBox white-bg">
                 <span class="iconbox"><img src="assets/images/icons/summary/6.png" alt="" /></span>
                 <div class="gradientBox-content">
@@ -255,7 +274,7 @@
               <div class="d-md-flex">
                 <div class="card-header flex-grow-1">
                   <h4 class="card-title">Transactions History</h4>
-                  <span>Last 7 days</span>
+                  <!-- <span>Last 7 days</span> -->
                 </div>
                 <!-- <div class="custom-daterange">
                         <i class="far fa-calendar-alt"></i>
