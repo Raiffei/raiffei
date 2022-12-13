@@ -3,6 +3,7 @@
 }
 .menu-md {
     width: 8rem;
+    margin-top: -22px;
 }
 .menu-md .nav-item a span {
     display: none;
